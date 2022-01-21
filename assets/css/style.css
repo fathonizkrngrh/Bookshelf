@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0 40px;
+}
+aside {
+  background-color: #424874;
+  color: #f4eeff;
+  width: 25%;
+  float: left;
+  height: 100%;
+  position: fixed;
+}
+
+.container {
+  margin: 30px;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.title > h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.title > img {
+  width: 40px;
+  height: 40px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 9px;
+}
+
+.input-inline,
+#bookSubmit,
+#inputBook > h3 {
+  margin: 9px;
+}
+
+.bookForm {
+  height: 100%;
+}
+
+.bookForm > form {
+  display: block;
+  margin: 100px 0;
+}
+
+.bookForm > form > hr {
+  margin: 9px;
+}
+
+.bookForm > form > div > input {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bookForm > form > div > input:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+#bookSubmit {
+  background-color: #112031;
+  padding: 4px 25px;
+  border-radius: 15px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+#bookReset {
+  background-color: #112031;
+  padding: 4px 25px;
+  border-radius: 15px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+#bookSubmit:hover {
+  background-color: white;
+  color: #112031;
+}
+#bookReset:hover {
+  background-color: white;
+  color: #112031;
+}
+
+.bookForm > form > div > input {
+  border-radius: 15px;
+  border-style: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  color: #112031;
+}
+
+main {
+  float: right;
+  width: 75%;
+  color: #112031;
+  height: 100%;
+}
+
+.search_section {
+  margin: 30px 30px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.4fr 0.1fr;
+  grid-gap: 10px;
+}
+
+.search_section > input {
+  padding: 5px 10px;
+  border-style: none;
+  border: 2px solid white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 15px;
+}
+
+.search_section > img {
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.book_shelf {
+  margin: 30px;
+}
+
+.book_shelf > h2 {
+  font-weight: 600;
+  color: #424874;
+  margin: 10px 0;
+}
+.book_shelf > hr {
+  height: 2px;
+  background-color: #a6b1e1;
+  border-style: none;
+}
+
+.book_shelf > .book_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.book_shelf > .book_list > .card {
+  padding: 10px 13px;
+  width: 22%;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.book_shelf > .book_list > .card > hr {
+  height: 2px;
+  border: none;
+  margin: 0 10px 5px 10px;
+}
+
+.book_shelf > .book_list > .card > h3 {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.book_shelf > .book_list > .card > p {
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+.book_shelf > .book_list > .card > .button-trash {
+  float: right;
+  background: url("../icon/trash.png");
+  margin-right: 6px;
+  cursor: pointer;
+  background-size: contain;
+  width: 20px;
+  height: 23px;
+  border: none;
+}
+
+.book_shelf > .book_list > .card > .button-check {
+  float: right;
+  background: url("../icon/check.png");
+  margin-right: 6px;
+  cursor: pointer;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.book_shelf > .book_list > .card > .button-undo {
+  float: right;
+  background: url("../icon/undo.png");
+  margin-right: 10px;
+  cursor: pointer;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  border: none;
+}

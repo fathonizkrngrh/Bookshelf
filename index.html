@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>BookShelf</title>
+    <link rel="shortcut icon" href="assets/icon/book-stack.png" />
+  </head>
+  <body>
+    <aside>
+      <div class="container">
+        <div class="title">
+          <img src="assets/icon/book-stack.png" alt="" />
+          <h2>BookShelf</h2>
+        </div>
+        <section class="bookForm">
+          <form id="inputBook">
+            <h3>Input your book</h3>
+            <hr />
+            <div class="input">
+              <label for="inputBookTitle">Title</label>
+              <input id="inputBookTitle" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Author</label>
+              <input id="inputBookAuthor" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Year</label>
+              <input id="inputBookYear" type="number" required />
+            </div>
+            <div class="input-inline">
+              <label for="inputBookIsComplete">Finished</label>
+              <input id="inputBookIsComplete" type="checkbox" />
+            </div>
+            <button id="bookSubmit" type="submit" value="submit">Add</button>
+            <button id="bookReset" type="reset" value="reset">Reset</button>
+          </form>
+        </section>
+      </div>
+    </aside>
+    <main>
+      <section class="search_section wrapper">
+        <input
+          id="searchBookTitle"
+          type="text"
+          placeholder="Search for title...."
+        />
+      </section>
+
+      <section class="book_shelf wrapper">
+        <h2>Not Finished</h2>
+        <hr />
+        <div id="unfinishedBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="book_shelf wrapper">
+        <h2>Finished</h2>
+        <hr />
+        <div id="finishedBookshelfList" class="book_list"></div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+  </body>
+</html>
